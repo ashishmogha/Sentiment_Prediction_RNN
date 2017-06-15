@@ -7,7 +7,36 @@ message filtering, assessing movie review polarity, among others.
 
 * Here I have implemented a  **recurrent neural network(RNN)** that performs **sentiment analysis**.
 
+
+
 # Architecture 
+
+![screenshot capture - 2017-06-16 - 03-19-29](https://user-images.githubusercontent.com/17912055/27203280-b4c43a24-5242-11e7-9662-df0f70144951.png)
+
+* Pass in words to an **embedding layer**. We need an **embedding layer** because we have tens of thousands of words, so we'll need a more efficient representation for our input data than **one-hot encoded vectors**. 
+
+* From the **embedding layer**, the new representations will be passed to **LSTM** cellls. These will add recurrent connections to the network so we can include information about the sequence of words in the data.
+
+* Finally, the **LSTM** cells will go to a sigmoid output layer here. We're using the `sigmoid` because we're trying to predict if this text has positive or negative sentiment. 
+
+* The output layer will just be a single unit then, with a `sigmoid` activation function.
+
+* We don't care about the `sigmoid` outputs except for the very last one, we can ignore the rest. We'll calculate the cost from the output of the last step and the training label.
+
+
+
+# Dataset
+
+* Here we'll use a dataset of movie reviews, accompanied by labels.
+1. [reviews.txt](https://raw.githubusercontent.com/ashishmogha/Sentiment_Prediction_RNN/master/reviews.txt)
+2. [labels.txt](https://raw.githubusercontent.com/ashishmogha/Sentiment_Prediction_RNN/master/labels.txt)
+
+
+# Libraries
+
+1. Tensorflow
+2. Numpy 
+
 
 
 
