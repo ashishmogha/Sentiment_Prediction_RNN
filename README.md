@@ -21,13 +21,13 @@ message filtering, assessing movie review polarity, among others.
 
 * The output layer will just be a single unit then, with a `sigmoid` activation function.
 
-* We don't care about the `sigmoid` outputs except for the very last one, we can ignore the rest. We'll calculate the cost from the output of the last step and the training label.
+* Don't care about the `sigmoid` outputs except for the very last one,ignore the rest.Calculate the cost from the output of the last step and the training label.
 
 
 
 # Dataset
 
-* Here we'll use a dataset of movie reviews, accompanied by labels.
+* Here I have used a  dataset of movie reviews, accompanied by labels.
 1. [reviews.txt](https://raw.githubusercontent.com/ashishmogha/Sentiment_Prediction_RNN/master/reviews.txt)
 2. [labels.txt](https://raw.githubusercontent.com/ashishmogha/Sentiment_Prediction_RNN/master/labels.txt)
 
