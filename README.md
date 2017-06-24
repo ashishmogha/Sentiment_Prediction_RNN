@@ -13,7 +13,7 @@ message filtering, assessing movie review polarity, among others.
 
 ![screenshot capture - 2017-06-16 - 03-19-29](https://user-images.githubusercontent.com/17912055/27203280-b4c43a24-5242-11e7-9662-df0f70144951.png)
 
-* Pass in words to an **embedding layer**.Need an **embedding layer** because there are tens of thousands of words, therefore need a more efficient representation for our input data than **one-hot encoded vectors**. 
+* Pass in words to an **embedding layer**.Need an **embedding layer** because there are tens of thousands of words, therefore need a more efficient representation for our input data than **one-hot encoded vectors**
 
 * From the **embedding layer**, the new representations will be passed to **LSTM** cellls. These will add recurrent connections to the network so we can include information about the sequence of words in the data.
 
