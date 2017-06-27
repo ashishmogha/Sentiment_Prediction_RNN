@@ -32,7 +32,7 @@ message filtering, assessing movie review polarity, among others.
 2. [labels.txt](https://raw.githubusercontent.com/ashishmogha/Sentiment_Prediction_RNN/master/labels.txt)
 
 
-# Libraries
+# Requirements
 
 1. Tensorflow
 2. Numpy 
